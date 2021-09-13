@@ -1,0 +1,69 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-image: url(img/background.jpeg);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.window {
+  height: 70vh;
+  background-color: lightgray;
+  border-radius: 5%;
+  padding: 2%;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-template-areas: "a1 a2"
+                       "a3 a4";
+}
+
+.container > div {
+  text-align: center;
+  height: 25vh;
+  margin: 1%;
+  padding: 1%;
+  font-size: 1em;
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+}
+
+#result > img {
+  height: 30vh;
+}
+
+#ans1 {
+  grid-area: a1;
+}
+
+#ans2 {
+  grid-area: a2;
+}
+
+#ans3 {
+  grid-area: a3;
+}
+
+#ans4 {
+  grid-area: a4;
+}
+
+#question {
+  margin: 4%;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#reset {
+  margin: 2%;
+  border-radius: 20px;
+  height: 8vh;
+}
